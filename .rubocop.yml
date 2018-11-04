@@ -1,0 +1,31 @@
+AlignParameters:
+  Enabled: false
+Documentation:
+  Enabled: false
+LineLength:
+  Max: 140
+  IgnoredPatterns: ['\b[e][a-z]+[(][p][a-z]+[)].[t][o]\b']
+Metrics/AbcSize:
+  Max: 30
+MethodLength:
+  CountComments: false
+  Max: 25
+Metrics/BlockLength:
+  CountComments: false
+  Max: 25
+  ExcludedMethods: ['describe', 'context', 'feature', 'scenario', 'guard']
+ClassLength:
+  CountComments: false
+  Max: 200
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+Layout/AlignHash:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/DotPosition:
+  EnforcedStyle: leading
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: no_comma
