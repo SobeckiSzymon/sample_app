@@ -38,7 +38,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', edit_user_path(@user.id)
     assert_select 'a[href=?]', about_path
     assert_select 'a[href=?]', contact_path
-    assert_select 'a[href=?]', signup_path
     assert_select 'a[href=?]', 'http://news.railstutorial.org/'
     get help_path
     assert_select 'title', full_title('Help')
@@ -52,7 +51,5 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select 'title', full_title('Edit user')
     get contact_path
     assert_select 'title', full_title('Contact')
-    get signup_path
-    assert_select 'title', full_title('Sign up')
   end
 end
