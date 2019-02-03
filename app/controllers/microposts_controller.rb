@@ -7,7 +7,10 @@ class MicropostsController < ApplicationController
       flash[:success] = 'Micropost created!'
       redirect_to root_url
     else
-      render 'static_pages/home'
+      @micropost.errors.full_messages.each do |message|
+        flash[:danger] = message.to_s
+      end
+      redirect_to root_url
     end
   end
 
