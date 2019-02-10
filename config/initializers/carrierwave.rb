@@ -1,8 +1,3 @@
-# require 'carrierwave/storage/abstract'
-# require 'carrierwave/storage/file'
-# require 'carrierwave/storage/fog'
-# require 'carrierwave/orm/activerecord'
-
 if Rails.env.production?
   CarrierWave.configure do |config|
     config.storage    = :aws
