@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'aws-sdk', '~> 3'
 gem 'bcrypt',                  '3.1.11'
 gem 'bootstrap-sass',          '3.3.7'
 gem 'bootstrap-will_paginate', '1.0.0'
