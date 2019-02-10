@@ -19,5 +19,9 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
       assert_match micropost.content, response.body
     end
     assert_select 'div.pagination', count: 1
+    assert_select 'div.stats', count: 1
+    log_in_as(@user)
+    get root_path
+    assert_select 'div.stats', count: 1
   end
 end
