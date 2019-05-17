@@ -32,6 +32,10 @@ textarea {
   }
 }
 
+.alert {
+  color: blue;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,7 +46,7 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: right;
 }
 
 h2 {
@@ -219,6 +223,9 @@ input {
   margin-left: 0;
 }
 
+.form-control {
+  border: 2px solid #bbb;
+}
 /* Users index */
 
 .users {
